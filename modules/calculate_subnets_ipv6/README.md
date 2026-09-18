@@ -1,5 +1,5 @@
 <!-- BEGIN_TF_DOCS -->
-# VPC module - Submodule: calculate\_subnets\_ipv6
+# VPC module - Submodule: `calculate_subnets_ipv6`
 
 Internal submodule of the [AWS VPC module](../..). It turns the `subnets` map into per-AZ IPv6 `/64` prefixes from the VPC's IPv6 CIDR. Subnet types that set `assign_ipv6_cidr = true` are calculated; types that pass `ipv6_cidrs` are zipped onto the AZ list unchanged. It is called by the root module and is not intended to be used on its own.
 
