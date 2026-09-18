@@ -44,7 +44,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_name"></a> [name](#input\_name) | (optional) describe your variable | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | Name prefix for the S3 bucket that stores the VPC Flow Logs. | `string` | n/a | yes |
 | <a name="input_lifecycle_filter_prefix"></a> [lifecycle\_filter\_prefix](#input\_lifecycle\_filter\_prefix) | Prefix to use for the lifecycle transition rule | `string` | `""` | no |
 
 ## Outputs
