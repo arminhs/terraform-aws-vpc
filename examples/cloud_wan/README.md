@@ -7,7 +7,7 @@ This example shows how you can use this module with `core_network` subnets, and 
 * Core Network's policy (in `cwan_policy.tf`), creating two segments (prod and nonprod) in two AWS Regions (*us-east-1* and *eu-west-1*). The *prod* segments needs acceptance for the attachments.
 * The VPC module creates the following (in two AWS Regions):
   * Two sets of subnets (workloads and core\_network)
-  * Cloud WAN's VPC attachment - with attachment acceptance for the VPC to associate to the *prod* segment.
+  * Cloud WAN's VPC attachment - with attachment acceptance for the VPC to associate to the *prod* segment. The attachment is created with the `vpcAttachment` routing policy label.
   * Routing to Core Network (0.0.0.0/0 & ::/0) in workload subnets.
 
 ## Requirements
@@ -15,14 +15,14 @@ This example shows how you can use this module with `core_network` subnets, and 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.22.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 6.27.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.22.0 |
-| <a name="provider_aws.awsnvirginia"></a> [aws.awsnvirginia](#provider\_aws.awsnvirginia) | >= 5.22.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 6.27.0 |
+| <a name="provider_aws.awsnvirginia"></a> [aws.awsnvirginia](#provider\_aws.awsnvirginia) | >= 6.27.0 |
 
 ## Modules
 
